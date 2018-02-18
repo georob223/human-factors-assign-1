@@ -6,13 +6,12 @@ class HeaderBar (Frame):
     def __init__(self, parent=None):
         Frame.__init__(self, parent)
         self.pack()
-        logo = PhotoImage(file='images/logo.gif')
-        can = Canvas(self)
-        can.pack(fill=BOTH)
-        can.config(width=20, height=20)
-        can.create_image(0, 0, image=logo, anchor=N)
-        btn = Button(self, text='Tesla', command=self.home)
-        btn.pack(fill=BOTH)
+        self.logo = PhotoImage(file="images/logo.gif")
+        btn = Button(self, text='Tesla', command=self.home, anchor=NW, justify=LEFT)
+        btn.pack()
+        can = Canvas(self, width=100, height=100)
+        can.create_image(0, 0, image=self.logo, anchor=NW)
+        can.pack(anchor=N)
 
     def home(self):
         ans = askokcancel('Leave your car behind','Take me home')
