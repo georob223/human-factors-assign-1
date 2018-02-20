@@ -1,5 +1,6 @@
 from Tkinter import *
+from HeaderBar import HeaderBar
 
-widget = Label( None, text='Hello toots.')
-widget.pack()
-widget.mainloop()
+
+bar = HeaderBar()
+bar.mainloop()
