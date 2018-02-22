@@ -1,4 +1,5 @@
 from Tkinter import *
+from Globals import *
 
 class FooterButtons (Frame):
     def __init__(self, next_func, last_func, parent=None, next_text="Next", last_text="Previous"):

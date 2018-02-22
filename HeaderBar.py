@@ -1,6 +1,6 @@
 from Tkinter import *
 from tkMessageBox import *
-
+from Globals import *
 
 class HeaderBar (Frame):
     def __init__(self, parent=None):
