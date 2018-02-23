@@ -1,4 +1,3 @@
-from Tkinter import *
 from Globals import *
 
 class FooterButtons (Frame):
